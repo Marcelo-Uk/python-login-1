@@ -1,0 +1,5 @@
+{% load permission_tags %}
+
+{% if user|has_role:'gerente' %}
+    Página do gerente
+{% endif %}
